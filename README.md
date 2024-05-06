@@ -11,7 +11,7 @@ output:
 
 - individual tif files for each tile (WELL_r_ROUND_ch_CHANNEL_TILE)
 
-**01_correct_illumination.ipynb**
+**01_correct_illumination_BaSiC.ipynb**
 
 input: 
 
@@ -31,6 +31,29 @@ input:
 
 output: 
 
-- assembled and aligned images (name convention: WELL_ashlar_SIGNAL_NAME)
+- assembled and aligned images (WELL_ashlar_SIGNAL_NAME)
+
+
+**03_segment_cellpose.ipynb**
+
+input: 
+
+- assembled and aligned images (WELL_ashlar_SIGNAL_NAME)
+
+output: 
+
+- segmented masks (WELL_mask)
+
+
+**04_quantify_regionprops.ipynb**
+
+input: 
+
+- assembled and aligned images (WELL_ashlar_SIGNAL_NAME)
+- segmented masks (WELL_mask)
+
+output: 
+
+- data frame with calculated object properties and median per image (background estimation)
 
 
