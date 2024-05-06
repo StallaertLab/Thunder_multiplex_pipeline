@@ -1,4 +1,4 @@
-# Thunder_general_pipeline
+# Thunder general pipeline
 A general pipeline to quantify a multiplexed experiment from the Thunder microscope. 
 
 **00_extract_tiles.ipynb**
