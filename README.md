@@ -1,6 +1,12 @@
 # Thunder general pipeline
 A general pipeline to quantify a multiplexed experiment from the Thunder microscope. 
 
+Uses:
+- ASHLAR https://github.com/labsyspharm/ashlar
+- BaSiC https://github.com/marrlab/BaSiC
+- Cellpose https://github.com/MouseLand/cellpose
+- Scikit-image https://scikit-image.org/
+
 **00_extract_tiles.ipynb**
 
 input: 
