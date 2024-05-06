@@ -22,4 +22,15 @@ output:
 - individual tif files for each tile corrected for flatness of illuminaiton (WELL_r_ROUND_ch_CHANNEL_TILE)
 - illumination patterns found with BASIC (for QC)
 
+**02_ASHLAR.ipynb**
+
+input: 
+
+- individual tif files for each tile corrected for flatness of illuminaiton (WELL_r_ROUND_ch_CHANNEL_TILE)
+- a dictionary mapping round and channel to the biomarker name
+
+output: 
+
+- assembled and aligned images (name convention: WELL_ashlar_SIGNAL_NAME)
+
 
