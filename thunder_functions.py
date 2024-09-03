@@ -51,12 +51,20 @@ def create_tiles_99(img_lif_list, ch_num_list, frame_size=2048):
     tiles = []
 
     # Row configuration for the 9x9 grid
-    row_config = {
-        0: (2, 5, 2),
-        1: (1, 7, 1),
-        7: (1, 7, 1),
-        8: (2, 5, 2)
-    }
+    if img_lif_list[0].dims.m == 69:
+      row_config = {
+          0: (2, 5, 2),
+          1: (1, 7, 1),
+          7: (1, 7, 1),
+          8: (2, 5, 2)
+      }
+    elif img_lif_list[0].dims.m == 77:
+      row_config = {
+          0: (1, 7, 1),
+          8: (1, 7, 1)
+      }
+    else:
+      raise ValueError("Unsupported number of tiles in the LIF file. Expected 69 or 77 tiles.")
 
     # Create the tiles for each row in the 9x9 grid
     for row in range(9):
